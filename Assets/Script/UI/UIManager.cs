@@ -9,20 +9,20 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    private HeartEffect[] hearts;
     private int childCount;
-    Image gameoverPanel;
     int tutoDegree;
     int heartIndex=3;
+    float questBoardWidth;      //퀘스트 효과를 위한 너비 구하기
+    float questBoardInitPosY;
+    float questBoardSpeed=1f;      //퀘스트 보드창이 움직이는 속도
+
+    HeartEffect[] hearts;
+    Image gameoverPanel;
     QuestManager questManager;
 
     RectTransform questBoard;
     TextMeshProUGUI questTitle;
     TextMeshProUGUI questContent;
-    float questBoardWidth;      //퀘스트 효과를 위한 너비 구하기
-    float questBoardInitPosY;
-
-    float questBoardSpeed=1f;      //퀘스트 보드창이 움직이는 속도
 
     GameObject questCompleteBoard;
     GameObject minimap;

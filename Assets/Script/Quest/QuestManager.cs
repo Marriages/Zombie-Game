@@ -11,25 +11,24 @@ public class QuestManager : MonoBehaviour
     int questIndex = -1 ;       //초기값은 -1
     int questLimit;
     public int targetCollectNum = 6;
-    public Tuple<string, string>[] quest;
+    Tuple<string, string>[] quest;
     string questTitle;
     string questContent;
-    UIManager ui;
-    PlayerQuest playerQuest;
 
     string mainQuest1Text = "Current : ";
     int collectQuestItem = 0;
 
     public GameObject questObject1;
     public GameObject questObject2;
-    public TutorialCubeDelete tutorialCube;
+    GameObject escapePlayerDrivingPos;
+    GameObject escapeCar;
 
-    public EscapeArea escapeArea;
-    public PlayerEscapeMarker playerEscapeMarker;
-
-    public Transform  escapePlayerPosition;
-    public GameObject escapePlayerDrivingPos;
-    public GameObject escapeCar;
+    UIManager ui;
+    PlayerQuest playerQuest;
+    TutorialCubeDelete tutorialCube;
+    EscapeArea escapeArea;
+    PlayerEscapeMarker playerEscapeMarker;
+    Transform  escapePlayerPosition;
 
     private void Awake()
     {
@@ -55,10 +54,7 @@ public class QuestManager : MonoBehaviour
 
 
         if (tutorialCube == null)
-        {
             tutorialCube = FindObjectOfType<TutorialCubeDelete>();
-        }
-
         if(escapeArea==null)
             escapeArea = FindObjectOfType<EscapeArea>();
         if(playerEscapeMarker==null)

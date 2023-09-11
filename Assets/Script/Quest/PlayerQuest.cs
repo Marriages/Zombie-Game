@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 public class PlayerQuest : MonoBehaviour
 {
     int tutorialDegree = 0;
-    private int inputTuto = 0;      //이동 튜토리얼 전용
-    private bool[] inputTutoBool = { false, false, false, false };
-    private bool tutoCollectQuestActive=false;
+    int inputTuto = 0;      //이동 튜토리얼 전용
+    bool[] inputTutoBool = { false, false, false, false };
+    bool tutoCollectQuestActive=false;
     public Action inputTutoComplete;        //입력 튜토리얼 종료
     public Action attackTutoComplete;       //공격 튜토리얼 종료
     public Action huntingTutoComplete;      //사냥 튜토리얼 종료

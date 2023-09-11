@@ -27,18 +27,16 @@ public class EnemyController : MonoBehaviour
     private Transform _playerTransform;
     public float moveSpeed=1f;
 
-    public bool isWakeup = false;
-    public bool isAttack = false;
-    public bool isDetect = false;
-    public bool attackFlag = false;
-    public bool isDie = false;
-    public bool isHit = false;
+    bool isWakeup = false;
+    bool isAttack = false;
+    bool isDetect = false;
+    bool isDie = false;
 
-    public float detectRange = 60f;
+    float detectRange = 60f;
 
-    public float rangeAttack = 2f;
+    float rangeAttack = 2f;
 
-    public float attackCoolTime = 4f;
+    float attackCoolTime = 4f;
     float attackCurrentTime = 0f;
     EnemyView view;
 
@@ -237,7 +235,6 @@ public class EnemyController : MonoBehaviour
             isWakeup = false;
             isAttack = false;
             isDetect = false;
-            attackFlag = false;
             _enemyPlayerDetector.gameObject.SetActive(false);
             _enemyWakeUpOther.gameObject.SetActive(false);
             _enemyCollider.enabled = false;

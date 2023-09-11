@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Behavior Tree\ActionNode.cs" />
-    <Compile Include="Assets\Script\Player\PlayerModel.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyHandController.cs" />
     <Compile Include="Assets\Script\Behavior Tree\ConditionalNode.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
@@ -96,7 +95,6 @@
     <Compile Include="Assets\Asset\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Script\Player\PlayerAttackEndReturnRotation.cs" />
     <Compile Include="Assets\Asset\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
-    <Compile Include="Assets\Script\Player\PlayerFrontLook.cs" />
     <Compile Include="Assets\Script\Player\PlayerController.cs" />
     <Compile Include="Assets\Script\ETC\DestroyZone.cs" />
     <Compile Include="Assets\Script\Player\PlayerWeaponAttackController.cs" />

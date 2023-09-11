@@ -414,8 +414,6 @@
 "Assets/Script/Player/PlayerAttackEndReturnRotation.cs"
 "Assets/Script/Player/PlayerController.cs"
 "Assets/Script/Player/PlayerEscapeMarker.cs"
-"Assets/Script/Player/PlayerFrontLook.cs"
-"Assets/Script/Player/PlayerModel.cs"
 "Assets/Script/Player/PlayerView.cs"
 "Assets/Script/Player/PlayerWeaponAttackController.cs"
 "Assets/Script/Player/PlayerWeaponController.cs"
